@@ -14,10 +14,7 @@ const COLOR_PRESETS = {
     { name: 'Orange', value: '#CC772F' },
     { name: 'Yellow', value: '#C29243' },
     { name: 'Green', value: '#548064' },
-    { name: 'Blue', value: '#477DA5' },
-    { name: 'Purple', value: '#A48BBE' },
-    { name: 'Pink', value: '#B35588' },
-    { name: 'Red', value: '#C4554D' },
+
   ],
   background: [
     { name: 'Default', value: 'unset' },
@@ -26,10 +23,7 @@ const COLOR_PRESETS = {
     { name: 'Orange', value: '#F8ECDF' },
     { name: 'Yellow', value: '#FAF3DD' },
     { name: 'Green', value: '#EEF3ED' },
-    { name: 'Blue', value: '#E9F3F7' },
-    { name: 'Purple', value: '#F6F3F8' },
-    { name: 'Pink', value: '#F9F2F5' },
-    { name: 'Red', value: '#FAECEC' },
+
   ],
 };
 
@@ -97,7 +91,7 @@ const HighlightColor = ({ editor, refs, floatingStyles, highlightColors = {} }: 
         <div className="yoo-toolbar-bg-[#FFFFFF] yoo-toolbar-p-2 yoo-toolbar-rounded-md yoo-toolbar-shadow-md yoo-toolbar-border yoo-toolbar-border-solid yoo-toolbar-border-[#e5e7eb]">
           {/* Tabs */}
           <div className="yoo-toolbar-flex yoo-toolbar-space-x-2 yoo-toolbar-mb-3">
-            <button
+            <button type='button'
               className={`yoo-toolbar-px-3 yoo-toolbar-py-1 yoo-toolbar-text-sm yoo-toolbar-rounded ${
                 tab === 'text'
                   ? 'yoo-toolbar-bg-blue-50 yoo-toolbar-text-blue-600'
@@ -107,7 +101,7 @@ const HighlightColor = ({ editor, refs, floatingStyles, highlightColors = {} }: 
             >
               Text
             </button>
-            <button
+            <button type='button'
               className={`yoo-toolbar-px-3 yoo-toolbar-py-1 yoo-toolbar-text-sm yoo-toolbar-rounded ${
                 tab === 'background'
                   ? 'yoo-toolbar-bg-blue-50 yoo-toolbar-text-blue-600'
@@ -135,7 +129,7 @@ const HighlightColor = ({ editor, refs, floatingStyles, highlightColors = {} }: 
 
           {/* Custom Color Section */}
           <div className="yoo-toolbar-border-t yoo-toolbar-pt-2">
-            <button
+            <button type='button'
               className="yoo-toolbar-text-sm yoo-toolbar-text-gray-600 hover:yoo-toolbar-text-gray-900 yoo-toolbar-flex yoo-toolbar-items-center"
               onClick={() => setShowColorPicker(!showColorPicker)}
             >
